@@ -38,7 +38,7 @@ func main() {
 
 		fmt.Print("Would you like to convert another temperature ? (y/n) ")
 
-		fmt.Scanln(&shouldConvertAgain)
+		_, err = fmt.Scanln(&shouldConvertAgain)
 
 		if err != nil {
 			printError(errReadingInput)
